@@ -50,7 +50,7 @@ public class Zoologico {
         zonas.add(zonaPorAgregar);
     }
 
-    public int cantidadTotalDeAnimales(){
+    public int cantidadTotalAnimales(){
         return Animal.getTotalAnimales();
 
     }
