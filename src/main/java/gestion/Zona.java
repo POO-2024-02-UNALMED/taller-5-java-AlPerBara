@@ -9,6 +9,7 @@ public class Zona {
     private String nombre;
     private Zoologico zoo;
     private List<Animal> animales;
+    
 
 
 
@@ -44,10 +45,15 @@ public class Zona {
 
     public void agregarAnimales(Animal animalPorAgregar){
         animales.add(animalPorAgregar);
+        animalPorAgregar.setZona(this);
     }
 
     public int cantidadAnimales(){
-        return animales.size();
+        int valor=0;
+        for(Animal animal:animales){
+            valor++;
+        }
+        return valor;
     }
 
 }
