@@ -51,14 +51,14 @@ public class Animal {
         this.habitat = habitat;
     }
     public String getHabitat() {
-        return habitat;
+        return this.habitat;
     }
 
     public void setGenero(String genero) {
         this.genero = genero;
     }
     public String getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public void setZona(Zona zona) {
@@ -67,7 +67,7 @@ public class Animal {
     }
 
     public Zona getZona() {
-        return zona;
+        return this.zona;
     }
 
 
@@ -88,11 +88,11 @@ public class Animal {
     public String toString(){
         if (this.zona!=null){
             return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+
-        " y mi género es "+this.genero+", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo().getNombre();
+        " y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo().getNombre();
         }
         else{
             return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+
-        " y mi género es "+this.genero;
+        " y mi genero es "+this.genero;
         }
     }
     
