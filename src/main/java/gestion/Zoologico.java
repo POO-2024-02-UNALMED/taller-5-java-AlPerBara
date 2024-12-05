@@ -24,14 +24,14 @@ public class Zoologico {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public String getUbicacion() {
-        return ubicacion;
+        return this.ubicacion;
     }
 
     public void setUbicacion(String ubicacion) {
@@ -39,7 +39,7 @@ public class Zoologico {
     }
 
     public List<Zona> getZona() {
-        return zonas;
+        return this.zonas;
     }
 
     public void setZona(List<Zona> zonas) {
